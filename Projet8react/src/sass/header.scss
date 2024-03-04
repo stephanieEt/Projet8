@@ -3,13 +3,22 @@
     justify-content: space-between;
     color: black;
 
+    img {
+        margin-left: 6vw;
+
+    }
+
     nav {
         ul {
             display: flex;
+            margin-right: 6vw;
+            gap: 20px;
 
             a {
                 text-decoration: none;
                 color: black;
+                font-size: 24px;
+                font-weight: 500;
 
                 &.underline {
                     text-decoration: underline;
