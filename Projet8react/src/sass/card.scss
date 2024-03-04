@@ -1,0 +1,28 @@
+.cards {
+    display: grid;
+    grid-gap: 40px;
+    margin: 63px 0px 0px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+
+    .card {
+        width: 250px;
+        height: 250px;
+        cursor: pointer;
+        position: relative;
+
+        img {
+            width: 19vw;
+            height: 29vh;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        h3 {
+            position: absolute;
+            color: white;
+            bottom: 0;
+            font-size: 18px;
+        }
+    }
+}
