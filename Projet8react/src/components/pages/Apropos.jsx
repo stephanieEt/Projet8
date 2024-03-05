@@ -2,8 +2,9 @@
 
  const Apropos = () => {
   return (
-    <div>
-      <h1>A propos</h1>
+    <div className="apropos">
+     <img src="./src/assets/images/bannerApropos.png" alt="Photo Montagne" />
+     <p>Fiabilité</p>
     </div>
   )
 }
