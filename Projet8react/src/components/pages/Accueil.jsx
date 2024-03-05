@@ -3,15 +3,17 @@ import data from "../../../data.json";
 
  const Accueil = () => {
   return (
+<div>      
+  <div className="banner">
+    <img src="./src/assets/images/banner.png" alt="Image de mer et falaises" />
+    <h1>Chez vous, partout et ailleurs</h1>
+  </div>
+  <div className="cards">
+    <Card data={data} />
+  </div>
+</div>
 
-    <div className="banner">
-      <img src="./src/assets/images/banner.png" alt="Image de mer et falaises" />
-      <h1>Chez vous, partout et ailleurs</h1>
-  
-    <div className="cards">
-      <Card data={data} />
-    </div>
-    </div>
+
   )
 }
 export default Accueil;

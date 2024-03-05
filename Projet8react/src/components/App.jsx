@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Accueil from './pages/Accueil';
 import Apropos from './pages/Apropos';
 import Identity from "./Identity";
+import Footer from "./Footer";
 
 const App = () => {
   return (
@@ -13,13 +14,11 @@ const App = () => {
 <Route path="/" element={<Accueil/>} />
 <Route path="/Apropos" element={<Apropos/>} />
 <Route path="data/:id" element={<Identity/>} />
-
 </Routes>
-
-
+<Footer/>
 </BrowserRouter>
 
-  )
+)
 
   
 };
