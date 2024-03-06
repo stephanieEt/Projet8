@@ -1,3 +1,13 @@
-.test {
-    color: red;
+body {
+    display: flex;
+    flex-direction: column;
+
+    #root {
+        flex-grow: 1;
+    }
+
+
+
+
+
 }
