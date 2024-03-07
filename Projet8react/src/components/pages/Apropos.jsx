@@ -6,11 +6,11 @@ import values from "../../constante/apropos.js";
     <div className="apropos">
      <img src="./src/assets/images/bannerApropos.png" alt="Photo Montagne" />
      <div className="container-collapse">
-        {values.map(({ value,index }) => (
-          <Accordion key={index} index={index} title={value.title}>
-            {value.text}
-            </Accordion>
-        ))}
+
+      {values.map((object) =>{
+         return <Accordion key={object.id} title={object.title} text={object.text}>
+         </Accordion>
+      } )}
       </div>
     
     </div>
