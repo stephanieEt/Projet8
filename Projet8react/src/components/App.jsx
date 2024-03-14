@@ -5,6 +5,7 @@ import Accueil from './pages/Accueil';
 import Apropos from './pages/Apropos';
 import Identity from "./Identity";
 import Footer from "./Footer";
+import Erreur from './pages/Erreur';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
 <Route path="/" element={<Accueil/>} />
 <Route path="/Apropos" element={<Apropos/>} />
 <Route path="data/:id" element={<Identity/>} />
+<Route path="*" element={<Erreur />} />
 </Routes>
 <Footer/>
 </BrowserRouter>
