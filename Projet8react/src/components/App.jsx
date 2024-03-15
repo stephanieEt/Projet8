@@ -3,9 +3,10 @@ import Header from './Header';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Accueil from './pages/Accueil';
 import Apropos from './pages/Apropos';
-import Identity from "./Identity";
+import Identity from "./pages/Identity";
 import Footer from "./Footer";
 import Erreur from './pages/Erreur';
+
 
 
 const App = () => {
