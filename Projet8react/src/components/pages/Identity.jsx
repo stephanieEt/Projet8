@@ -1,22 +1,20 @@
-import Carrousel from "../Caroussel";
-import data from "../../../data.json";
-import{useParams} from "react-router-dom";
 
-const getCardId = (id)=>{
-  return data.find((data)=>data.id===id);
-}
+import { useParams } from "react-router-dom";
+import datas from "../../../data.json";
+import Caroussel from "../Caroussel";
 
+const Location = () => {
+  const { id } = useParams();
+  const data = datas.find((item) => item.id === id);
+    
+  return (
+    <>
+      <div className="location">
+        <Caroussel pictures={data.pictures}/>
+        </div>
+      
+    </>
+  );
+};
 
- const Identity = () => {
-  const {id} = useParams();
-  const data = getCardId(id);
-  const pictures = data.pictures;
-
-  return(
-    <div>
-    <h1>hello </h1>
-    <Carrousel pictures={pictures}/>
-    </div>
-  )
- }
-export default Identity;
+export default Location;

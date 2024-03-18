@@ -3,7 +3,7 @@ import Header from './Header';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Accueil from './pages/Accueil';
 import Apropos from './pages/Apropos';
-import Identity from "./pages/Identity";
+import Location from "./pages/Identity";
 import Footer from "./Footer";
 import Erreur from './pages/Erreur';
 
@@ -17,7 +17,7 @@ const App = () => {
 <Routes>
 <Route path="/" element={<Accueil/>} />
 <Route path="/Apropos" element={<Apropos/>} />
-<Route path="data/:id" element={<Identity/>} />
+<Route path="data/:id" element={<Location/>} />
 <Route path="*" element={<Erreur />} />
 </Routes>
 <Footer/>
