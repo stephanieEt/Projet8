@@ -1,16 +1,17 @@
 .cards {
     display: grid;
     grid-gap: 70px;
-    margin: 63px 0px 0px 60px;
+    margin: 63px 0px 0px 7vw;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    width: 1440px;
-    margin-left: 236px;
+    width: 88%;
+
 
 
     .card {
         cursor: pointer;
         position: relative;
+        width: 20vw;
 
         img {
             width: 22vw;
