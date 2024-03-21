@@ -113,9 +113,6 @@
                 }
             }
 
-
-
-
             .location_container_infos_right {
 
                 display: flex;
@@ -151,8 +148,32 @@
             }
         }
 
+        .location_container_accordion {
+            display: flex;
+            gap: 125px;
+            margin-top: 25px;
 
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                gap: 0;
+                align-items: center;
+                padding: 10px 0;
+                margin-top: 0;
+            }
 
+            .accordion__title {
+                width: 34vw;
+                margin-left: 0;
+            }
 
+            .accordion__text {
+                margin-left: 14px;
+                max-width: 34vw;
+
+            }
+
+        }
     }
+
+
 }
