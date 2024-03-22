@@ -20,7 +20,7 @@
 
         .arrowLeft {
             position: absolute;
-            top: 145px;
+            top: 45%;
             left: 0px;
             padding-left: 20px;
             cursor: pointer;
@@ -28,14 +28,13 @@
 
             @media screen and (max-width:768px) {
                 height: 30px;
-                top: 165px;
                 padding-left: 10px;
             }
         }
 
         .arrowRight {
             position: absolute;
-            top: 145px;
+            top: 45%;
             right: 0px;
             padding-right: 20px;
             cursor: pointer;
@@ -43,7 +42,6 @@
 
             @media screen and (max-width:768px) {
                 height: 30px;
-                top: 165px;
                 padding-right: 10px;
             }
         }
@@ -128,6 +126,13 @@
                     padding: 20px 0;
                 }
 
+                .redStars {
+                    @media screen and (max-width: 768px) {
+                        width: 18px;
+                    }
+
+                }
+
                 .host {
                     display: flex;
 
@@ -137,12 +142,22 @@
                         font-size: 18px;
                         font-weight: 500;
                         width: 98px;
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 12px;
+                        }
                     }
 
                     img {
-                        width: 65px;
-                        height: 65px;
+                        width: 64px;
+                        height: 64px;
                         border-radius: 50%;
+                        margin-top: 7px;
+
+                        @media screen and (max-width: 768px) {
+                            width: 32px;
+                            height: 32px;
+                        }
                     }
                 }
             }
@@ -162,8 +177,13 @@
             }
 
             .accordion__title {
-                width: 34vw;
+                width: 36vw;
                 margin-left: 0;
+
+                @media screen and (max-width: 768px) {
+                    width: 70vw;
+                    font-size: 13px;
+                }
             }
 
             .accordion__text {

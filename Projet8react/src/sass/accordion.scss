@@ -22,9 +22,16 @@
             gap: 10px;
             color: white;
             border-radius: 5px;
-            width: 80%;
-            margin-left: 86px;
+            width: 72vw;
+            margin-left: 12vw;
             font-family: 'Montserrat';
+
+            @media screen and (max-width:768px) {
+                font-size: 13px;
+                margin-left: 14vw;
+                width: 61vw;
+
+            }
         }
     }
 
@@ -37,9 +44,16 @@
 
         .accordion__text {
             display: initial;
-            margin-left: 95px;
+            margin-left: 13vw;
             max-width: 70vw;
             font-family: 'Montserrat';
+
+            @media screen and (max-width:768px) {
+                margin-left: 15vw;
+                font-size: 13px;
+
+
+            }
         }
     }
 
