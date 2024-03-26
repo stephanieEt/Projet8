@@ -4,6 +4,14 @@
     position: relative;
     margin-top: 30px;
     margin-left: 6vw;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 139px;
+    }
+
 
     img {
         width: 100%;
@@ -11,6 +19,11 @@
         object-fit: cover;
         border-radius: 25px;
         filter: brightness(70%);
+
+        @media screen and (max-width:768px) {
+            width: 90%;
+            margin-right: 9vw;
+        }
     }
 
     h1 {
@@ -19,7 +32,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 2.5em;
+        font-size: 48px;
+        font-family: 'Montserrat';
 
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+            left: 37%;
+
+        }
     }
 }

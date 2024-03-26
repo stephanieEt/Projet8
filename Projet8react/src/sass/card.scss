@@ -1,16 +1,29 @@
 .cards {
     display: grid;
     grid-gap: 70px;
-    margin: 63px 0px 0px 60px;
+    margin: 63px 0px 0px 7vw;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    width: 1440px;
-    margin-left: 236px;
+    width: 88%;
+
+    @media screen and (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 10%;
+    }
+
 
 
     .card {
         cursor: pointer;
         position: relative;
+        width: 20vw;
+
+        @media screen and (max-width:768px) {
+            width: 60px;
+            margin-left: 38px;
+        }
 
         img {
             width: 22vw;
@@ -23,6 +36,12 @@
                 filter: brightness(1);
 
             }
+
+            @media screen and (max-width:768px) {
+                width: 67vw;
+                height: 31vh;
+                margin-left: -2vw;
+            }
         }
 
         h3 {
@@ -31,6 +50,11 @@
             bottom: 0;
             font-size: 18px;
             padding-left: 10px;
+            font-family: "Montserrat";
+
+            @media screen and (max-width:768px) {
+                width: 235px;
+            }
         }
     }
 }
