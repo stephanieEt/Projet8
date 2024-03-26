@@ -50,7 +50,7 @@
             position: absolute;
             bottom: 7%;
             right: 50%;
-            font-family: Montserrat;
+            font-family: 'Montserrat';
             font-size: 18px;
             font-weight: 500;
             line-height: 26px;
@@ -75,7 +75,7 @@
             .location_container_infos_left {
                 h2 {
                     max-width: 736px;
-                    color: #ff6060;
+                    color: rgba(255, 96, 96, 1);
                     font-family: "Montserrat";
                     font-size: 36px;
                     font-weight: 500;
@@ -87,7 +87,7 @@
                 }
 
                 h3 {
-                    color: #ff6060;
+                    color: rgba(0, 0, 0, 1);
                     font-family: "Montserrat";
                     font-size: 18px;
                     font-weight: bold;
@@ -101,7 +101,7 @@
 
                     .tags {
 
-                        background: #ff6060;
+                        background: rgba(255, 96, 96, 1);
                         color: white;
                         border-radius: 10px;
                         padding: 5px 30px;
@@ -137,7 +137,7 @@
                     display: flex;
 
                     h3 {
-                        color: #ff6060;
+                        color: rgba(255, 96, 96, 1);
                         font-family: "Montserrat";
                         font-size: 18px;
                         font-weight: 500;
@@ -177,7 +177,7 @@
             }
 
             .accordion__title {
-                width: 36vw;
+                width: 33vw;
                 margin-left: 0;
 
                 @media screen and (max-width: 768px) {

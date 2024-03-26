@@ -6,7 +6,7 @@ import Rating from "../Rating";
 import Accordion from "../Accordion";
 import { useEffect } from "react";
 
-const Location = () => {
+const Identity = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const data = datas.find((item) => item.id === id);
@@ -64,4 +64,4 @@ const Location = () => {
   );
 };
 
-export default Location;
+export default Identity;
