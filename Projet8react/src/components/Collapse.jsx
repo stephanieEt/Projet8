@@ -2,7 +2,7 @@ import { useState } from "react";
 import chevronCollapse from "../assets/images/arrow-up.png";
 import PropTypes from "prop-types";
 
-const Accordion = (props) => {
+const Collapse = (props) => {
   const [active, setActive] = useState(false);
   const handleToggle = () => {
     setActive(!active);
@@ -29,9 +29,9 @@ const Accordion = (props) => {
     </div>
   );
 };
-Accordion.propTypes = {
+Collapse.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.node.isRequired,
 };
 
-export default Accordion;
+export default Collapse;

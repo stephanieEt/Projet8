@@ -1,4 +1,4 @@
-import Accordion from "../Accordion";
+import Collapse from "../Collapse.jsx";
 import values from "../../constante/apropos.js";
 import Montagne from "../../assets/images/bannerApropos.png";
 
@@ -11,11 +11,11 @@ const Apropos = () => {
       <div>
         {values.map((object) => {
           return (
-            <Accordion
+            <Collapse
               key={object.id}
               title={object.title}
               text={object.text}
-            ></Accordion>
+            ></Collapse>
           );
         })}
       </div>
