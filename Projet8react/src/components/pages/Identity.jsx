@@ -1,9 +1,9 @@
 import { useParams, useNavigate } from "react-router-dom";
 import datas from "../../../data.json";
-import Caroussel from "../Caroussel";
+import Gallery from "../Gallery";
 import Tags from "../Tags";
 import Rating from "../Rating";
-import Accordion from "../Accordion";
+import Collapse from "../Collapse";
 import { useEffect } from "react";
 
 const Identity = () => {
@@ -24,7 +24,7 @@ const Identity = () => {
   return (
     <>
       <div className="location">
-        <Caroussel pictures={data.pictures} />
+        <Gallery pictures={data.pictures} />
         <div className="location_container">
           <div className="location_container_infos">
             <div className="location_container_infos_left">
@@ -47,12 +47,12 @@ const Identity = () => {
             </div>
           </div>
           <div className="location_container_accordion">
-            <Accordion
+            <Collapse
               className="accordion__title"
               title={"Description"}
               text={data.description}
             />
-            <Accordion
+            <Collapse
               className="accordion__text"
               title={"Équipements"}
               text={data.equipments}

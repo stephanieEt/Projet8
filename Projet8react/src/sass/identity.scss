@@ -167,6 +167,7 @@
             display: flex;
             gap: 125px;
             margin-top: 25px;
+            width: 100%;
 
             @media screen and (max-width: 768px) {
                 flex-direction: column;
@@ -183,6 +184,11 @@
                 @media screen and (max-width: 768px) {
                     width: 70vw;
                     font-size: 13px;
+                    margin-left: -94px;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    margin-right: -77px;
                 }
             }
 

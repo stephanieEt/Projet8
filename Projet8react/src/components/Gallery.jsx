@@ -3,7 +3,7 @@ import arrowRight from "../assets/images/arrowRight.png";
 import arrowLeft from "../assets/images/arrowLeft.png";
 import { useState } from "react";
 
-const Caroussel = ({ pictures }) => {
+const Gallery = ({ pictures }) => {
   // pictures est un tableau qui contient le lien pour chaque image du caroussel
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -58,8 +58,8 @@ const Caroussel = ({ pictures }) => {
     </div>
   );
 };
-Caroussel.propTypes = {
+Gallery.propTypes = {
   pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-export default Caroussel;
+export default Gallery;
